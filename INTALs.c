@@ -12,7 +12,7 @@ char* initializeINTAL() {
     return _intal;
 }
 
-// function to compare two INTALs
+//1. function to compare two INTALs
 int compareINTAL(char* intal_a, char* intal_b) {
   if(strlen(intal_a) > strlen(intal_b))
     return 1;
@@ -64,7 +64,7 @@ void addINTALs(char* intal_a, char* intal_b, char* result, int res_len) {
   result[0] = (carry == 1) ? '1' : '0'; // 48 + 1(carry)
 }
 
-// function to calculate the sum of two INTALs
+//2. function to calculate the sum of two INTALs
 char* INTALadder(char* intal_a, char* intal_b) {
   // setting the INTALs
   setINTALs(&intal_a, &intal_b);
@@ -100,7 +100,7 @@ void subtractINTALs(char* intal_a, char* intal_b, char* result, int res_len) {
   }
 }
 
-// function to calculate the difference between two INTALs
+//3. function to calculate the difference between two INTALs
 char* INTALsubtractor(char* intal_a, char* intal_b) {
   // setting the minuend and the subtrahend
   setINTALs(&intal_a, &intal_b);
@@ -145,7 +145,7 @@ void multiplyINTALs(char* intal_a, char* intal_b, char* result) {
   }
 }
 
-// function to calculate the multiplication of two INTALs
+//3. function to calculate the multiplication of two INTALs
 char* INTALmultiplicator(char* intal_a, char* intal_b) {
   int len_intal_a = strlen(intal_a);
   int len_intal_b = strlen(intal_b);
@@ -179,7 +179,7 @@ char* INTALmultiplicator(char* intal_a, char* intal_b) {
   return trimINTAL(result);;
 }
 
-// function to calculate the nth fibonacci INTAL
+//4. function to calculate the nth fibonacci INTAL
 char* INTALfibonacci(unsigned int n) {
   // initializing basic parameters
   char *intal_a = initializeINTAL(), *intal_b = initializeINTAL();
@@ -206,7 +206,7 @@ char* INTALfibonacci(unsigned int n) {
   return temp_INTAL;
 }
 
-// function to calculate the factorial of a number in INTAL
+//5. function to calculate the factorial of a number in INTAL
 char* INTALfactorial(unsigned int m) {
   char *intal_fact = initializeINTAL();
   char *intal_it = initializeINTAL();
