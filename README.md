@@ -7,12 +7,12 @@ Integer of Arbitrary Length
 ### Inputs
 The program can take input INTALs
 
-### Funcions
-1. initializeINTAL : initializes an INTAL
-1. compareINTAL : compares two INTALs
-2. trimINTAL : trims an INTAL
-3. INTALadder : returns the sum of two INTALs
-4. INTALsubtractor : returns the difference between two INTALs
-5. INTALmultiplicator : returns the multiplication of two INTALs
-6. INTALfibonacci : returns the nth INTAL fibonacci
-7. INTALfactorial : returns the nth INTAL factorial
+### Functions
+1. initializeINTAL() : initializes an INTAL
+2. compareINTAL(INTAL n1, INTAL n2) : compares two INTALs
+3. trimINTAL(INTAL n) : trims an INTAL
+4. INTALadder(INTAL n1, INTAL n2) : returns the sum of two INTALs
+5. INTALsubtractor(INTAL n1, INTAL n2) : returns the difference between two INTALs
+6. INTALmultiplicator(INTAL n1, INTAL n2) : returns the multiplication of two INTALs
+7. INTALfibonacci(unsigned int n) : returns the nth INTAL fibonacci
+8. INTALfactorial(unsigned int n) : returns the nth INTAL factorial
